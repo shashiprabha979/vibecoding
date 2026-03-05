@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@700&family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Profile Generator</h1>
+            <p>Enter your details to create a stunning profile card.</p>
+        </header>
+
+        <main class="main-content">
+            <section class="form-section glass">
+                <form id="profile-form">
+                    <div class="input-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="e.g. John Doe" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="stream">Stream</label>
+                        <input type="text" id="stream" placeholder="e.g. Computer Science" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="bio">Short Bio</label>
+                        <textarea id="bio" placeholder="Tell us a bit about yourself..." rows="3" required></textarea>
+                    </div>
+                    <button type="submit" id="generate-btn">Generate Profile</button>
+                </form>
+            </section>
+
+            <section class="preview-section">
+                <div class="profile-card glass" id="profile-card">
+                    <div class="card-header">
+                        <div class="profile-image-container">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=200&h=200" alt="Student Profile" id="profile-img">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h2 id="display-name">John Doe</h2>
+                        <h3 id="display-stream">Software Engineering</h3>
+                        <p id="display-bio">Passionate student exploring the world of web development and UI/UX design.</p>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
